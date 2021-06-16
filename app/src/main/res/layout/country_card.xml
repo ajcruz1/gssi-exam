@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_flag"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <LinearLayout
+            android:id="@+id/ll_name_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/iv_flag"
+            android:weightSum="4"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:id="@+id/tv_name_lbl"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/name_lbl"/>
+            <TextView
+                android:id="@+id/tv_name_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_capital_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/ll_name_container"
+            android:weightSum="4">
+            <TextView
+                android:id="@+id/tv_capital_lbl"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/capital_lbl"/>
+            <TextView
+                android:id="@+id/tv_capital_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                
+                 />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_region_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/ll_capital_container"
+            android:weightSum="4">
+            <TextView
+                android:id="@+id/tv_region_lbl"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/region_lbl"/>
+            <TextView
+                android:id="@+id/tv_region_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                
+                 />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_abbrv_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/ll_region_container"
+            android:weightSum="4">
+            <TextView
+                android:id="@+id/tv_abbrv_lbl"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/abbreviation_lbl"/>
+            <TextView
+                android:id="@+id/tv_abbrv_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                
+                 />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_call_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/ll_abbrv_container"
+            android:weightSum="4">
+            <TextView
+                android:id="@+id/tv_call_lbl"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/callCodes_lbl"/>
+            <TextView
+                android:id="@+id/tv_call_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                
+                 />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_pop_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/ll_call_container"
+            android:weightSum="4">
+            <TextView
+                android:id="@+id/tv_pop_lbl"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/population_lbl"/>
+            <TextView
+                android:id="@+id/tv_pop_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                
+                 />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_curr_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/ll_pop_container"
+            android:weightSum="4">
+            <TextView
+                android:id="@+id/tv_curr_lbl"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/currencies_lbl"/>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3">
+                <LinearLayout
+                    android:id="@+id/ll_currname_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:weightSum="4">
+                    <TextView
+                        android:id="@+id/tv_currname_lbl"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/name_lbl" 
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:id="@+id/tv_currname_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_currcode_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/ll_currname_container"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:weightSum="4">
+                    <TextView
+                        android:id="@+id/tv_currcode_lbl"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/code_lbl"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:id="@+id/tv_currcode_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_currsym_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/ll_currcode_container"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:weightSum="4">
+                    <TextView
+                        android:id="@+id/tv_currsym_lbl"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/symbol_lbl"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:id="@+id/tv_currsym_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_latlng_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/ll_curr_container"
+            android:weightSum="4">
+            <TextView
+                android:id="@+id/tv_latlng_lbl"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/latlng_lbl"/>
+            <TextView
+                android:id="@+id/tv_latlng_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                
+                 />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_lang_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/ll_latlng_container"
+            android:weightSum="4">
+            <TextView
+                android:id="@+id/tv_lang_lbl"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/languages_lbl"/>
+            <TextView
+                android:id="@+id/tv_lang_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                
+                 />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_border_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/ll_lang_container"
+            android:weightSum="4">
+            <TextView
+                android:id="@+id/tv_border_lbl"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/borders_lbl"/>
+            <TextView
+                android:id="@+id/tv_border_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                
+                 />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@id/ll_border_container"/>
+        
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

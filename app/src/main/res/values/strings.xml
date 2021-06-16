@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">CountriesApplication</string>
+    <string name="search_lbl">Search Countries by Name</string>
+    <string name="name_lbl">Name: </string>
+    <string name="capital_lbl">Capital: </string>
+    <string name="region_lbl">Region: </string>
+    <string name="abbreviation_lbl">Abbreviation: </string>
+    <string name="callCodes_lbl">Calling Codes: </string>
+    <string name="population_lbl">Population: </string>
+    <string name="currencies_lbl">Currency </string>
+    <string name="code_lbl">Code: </string>
+    <string name="symbol_lbl">Symbol: </string>
+    <string name="latlng_lbl">Coordinates: </string>
+    <string name="languages_lbl">Languages: </string>
+    <string name="native_name_lbl">Native Name: </string>
+    <string name="borders_lbl">Borders: </string>
+</resources>
